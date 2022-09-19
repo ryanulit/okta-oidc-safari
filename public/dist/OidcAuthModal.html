@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIDC Auth Modal</title>
+</head>
+<body>
+    <script>
+        window.onload = () => {
+            const params = new URLSearchParams(window.location.search);
+            const loginUrl = params.get('loginUrl');
+            const code = params.get('code');
+            const state = params.get('state');
+
+            if (loginUrl) {
+                window.location.href = decodeURIComponent(loginUrl);
+            } else {
+                window.opener.postMessage({
+                    code, state
+                });
+            }
+        };
+    </script>
+</body>
+</html>
