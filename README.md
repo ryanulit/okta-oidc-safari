@@ -6,11 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```
 npm start
+
+// runs in sudo privilege, so enter password when prompted by the cli
 ```
 
-Will run the app in development mode on https://local.virtru.com
+Will run the app in development mode on https://local.virtru.com.
 
-Requires:
+Additional Requirements:
 - port 443 to be available and a custom host entry for `127.0.0.1   local.virtru.com`
 - `.env` file for environment variable values (ask me for this file)
 
