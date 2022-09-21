@@ -4,19 +4,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Run the app locally
 
+### Local environment setup
+
+- Clone repo 
+- Add .env file obtained outside of Github to root directory of cloned repo
+- Add entry to hosts file for `127.0.0.1   local.virtru.com`. This is necessary to match the redirect URIs specified in Okta authorization server.
+- Ensure port 443 is not in use
+
+### Run app
+
 ```
 npm start
 
-// runs in sudo privilege, so enter password when prompted by the cli
+// runs with sudo privilege, so enter password when prompted by the cli
 ```
 
-Will run the app in development mode on https://local.virtru.com.
-
-Additional Requirements:
-- port 443 to be available and a custom host entry for `127.0.0.1   local.virtru.com`
-- `.env` file for environment variable values (ask me for this file)
-
-_Note: The host entry above is necessary to match the redirect URI set in Okta app configuration_
+App is now running in development mode on https://local.virtru.com.
 
 ## Reproduce the issue
 

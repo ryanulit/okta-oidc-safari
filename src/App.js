@@ -35,7 +35,8 @@ function App() {
     url.searchParams.append('code_challenge', authState.codeChallenge);
     url.searchParams.append('state', authState.stateKey);
 
-    window.location.href = url.toString();
+    console.log(url.toString());
+    //window.location.href = url.toString();
   };
 
   const loginWithPopup = async (idp) => {
