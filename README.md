@@ -12,8 +12,9 @@ npm install
 
 ### 2) Setup local environment
 
-- Add .env file obtained outside of Github to root directory of cloned repo
-- Add entry to hosts file for `127.0.0.1   local.virtru.com`. This is necessary to match the redirect URIs specified in Okta authorization server.
+- Download the `local.env` file attached in the Okta case
+- Add `local.env` file to the root directory of your locally cloned repo, and then rename it to `.env` _(local.env filename was necessary to be able to upload to the Okta case file)_
+- Add entry in your system's hosts file for `127.0.0.1   local.virtru.com`. This is necessary to match the redirect URIs specified in Okta authorization server.
 - Ensure port 443 is not in use
 
 ### 3) Run app
