@@ -1,17 +1,22 @@
-# Getting Started with Create React App
+# Okta OIDC issues with Safari sample app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Run the app locally
 
-### Local environment setup
+### 1) Install dependencies
 
-- Clone repo 
+```
+npm install
+```
+
+### 2) Setup local environment
+
 - Add .env file obtained outside of Github to root directory of cloned repo
 - Add entry to hosts file for `127.0.0.1   local.virtru.com`. This is necessary to match the redirect URIs specified in Okta authorization server.
 - Ensure port 443 is not in use
 
-### Run app
+### 3) Run app
 
 ```
 npm start
